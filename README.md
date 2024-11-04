@@ -1,2 +1,7 @@
 # mittagsplaner
-einfach öffnen und auf generieren klicken
+
+data.js im data ordner anlegen 
+->
+Auf generieren klicken
+-> 
+Fertig
