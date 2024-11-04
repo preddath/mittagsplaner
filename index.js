@@ -1,4 +1,4 @@
-import NoGo from "./NoGo.js";
+import {drivers, options, nogos} from "./data/data.js";
 
 const days = [
     'montag',
@@ -6,36 +6,6 @@ const days = [
     'mittwoch',
     'donnerstag',
     'freitag'
-];
-
-const options = [
-    'BK',
-    'Stützel',
-    'Globus',
-    'Meaty Munch (Ranzi)',
-    'Bäcker',
-    'Globus-Pizza',
-];
-
-const drivers = [
-    'Joshua',
-    'Kai',
-    'Carsten',
-    'Adriano',
-    'Dorian'
-];
-
-// Kommt noch
-const specials = [
-    'Mc Donalds',
-    'Döner',
-];
-
-const nogos = [
-    new NoGo(0,1),
-    new NoGo(4,null,1), // Dori Berufsschule
-    new NoGo(4,null,2), // Dori Berufsschule
-    new NoGo(2,null,4), // Carsten hat was dabei
 ];
 
 function generate() {

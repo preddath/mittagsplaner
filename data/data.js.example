@@ -1,0 +1,19 @@
+import NoGo from "../NoGo.js";
+
+export const options = [
+    'Pizza',
+    'Burger',
+    'Salad'
+];
+
+export const drivers = [
+    'John',
+    'Erik'
+];
+
+export const nogos = [
+    new NoGo(0,1),
+    new NoGo(4,null,1),
+    new NoGo(4,null,2),
+    new NoGo(2,null,4),
+];
