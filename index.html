@@ -1,15 +1,59 @@
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script src="index.js"></script>
-    </head>
-    <body>
-        <div class="w-full h-full flex-col justify-center">
-            <div class="flex justify-center">
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kentix Mittagstool</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="index.js"></script>
+</head>
+<body>
+<div class="w-screen h-screen flex items-center justify-center">
+    <div class="" id="body">
+        <header class="flex justify-between items-center px-4 py-4 text-xl bg-gray-100 border-t-4 rounded-t-lg"
+                style="border-top-color: orange;">
+            <div class="flex-grow text-center">Wochenplan</div>
+            <button type="button" id="generator" class="border border-gray-300 p-1 bg-gray-300 rounded-lg">
+                Generieren
+            </button>
+        </header>
+        <div class="w-full flex border border-black">
+            <div class="w-64 border-r border-black" id="montag">
+                <div class="h-12 text-center font-semibold">
+                    Montag
+                </div>
+                <div class="h-12 text-center" id="value_montag"></div>
+                <div class="h-12 text-center" id="driver_montag"></div>
+            </div>
+            <div class="w-64 border-r border-black" id="dienstag">
+                <div class="h-12 text-center font-semibold">
+                    Dienstag
+                </div>
+                <div class="h-12 text-center" id="value_dienstag"></div>
+                <div class="h-12 text-center" id="driver_dienstag"></div>
+            </div>
+            <div class="w-64 border-r border-black" id="mittwoch">
+                <div class="h-12 text-center font-semibold">
+                    Mittwoch
+                </div>
+                <div class="h-12 text-center" id="value_mittwoch"></div>
+                <div class="h-12 text-center" id="driver_mittwoch"></div>
+            </div>
+            <div class="w-64 border-r border-black" id="donnerstag">
+                <div class="h-12 text-center font-semibold">
+                    Donnerstag
+                </div>
+                <div class="h-12 text-center" id="value_donnerstag"></div>
+                <div class="h-12 text-center" id="driver_donnerstag"></div>
+            </div>
+            <div class="w-64" id="freitag">
+                <div class="h-12 text-center font-semibold">
+                    Freitag
+                </div>
+                <div class="h-12 text-center" id="value_freitag"></div>
+                <div class="h-12 text-center" id="driver_freitag"></div>
             </div>
         </div>
-    </body>
+    </div>
+</div>
+</body>
 </html>
