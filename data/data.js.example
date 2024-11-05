@@ -12,8 +12,5 @@ export const drivers = [
 ];
 
 export const nogos = [
-    new NoGo(0,1),
-    new NoGo(4,null,1),
-    new NoGo(4,null,2),
-    new NoGo(2,null,4),
+    new NoGo('John',null,4), // John wont be rolled for Friday
 ];

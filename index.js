@@ -11,8 +11,8 @@ const days = [
 function generate() {
     let d = JSON.parse(JSON.stringify(drivers));
     let op = JSON.parse(JSON.stringify(options));
-    days.forEach(day => {
-        let value = generateEntry(day, d, op);
+    days.forEach((day, index) => {
+        let value = generateEntry(index, d, op);
         document.getElementById('driver_'+day).innerHTML = d[value[0]];
         document.getElementById('value_'+day).innerHTML = op[value[1]];
         d = d.filter((item, index) => index !== value[0]);
@@ -28,7 +28,7 @@ function generateEntry(day, d, op) {
     const p = randomInteger(0, d.length-1);
     const pl = randomInteger(0, op.length-1);
 
-    if (nogos.some((nogo) => nogo.check(p,pl,day))) {
+    if (nogos.some((nogo) => nogo.check(d[p],op[pl],day))) {
         return generateEntry(day, d, op);
     } else {
         return [p,pl];
